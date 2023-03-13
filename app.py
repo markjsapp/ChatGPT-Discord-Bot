@@ -32,4 +32,4 @@ async def askChatGPT(ctx, question):
         await ctx.send("Webhook POST request failed...")
 
 # run the bot
-bot.run('MTA4NDYwODQxNDkyMTAwMzA5OA.GKYQO3.bgzebn4upH0uTjrQMDkw6No1nd6pSwG-gLPI9g')
+bot.run('MTA4NDYwODQxNDkyMTAwMzA5OA.G0UywQ.t52Ws8jfXHM1EMwDYPYz7o0gJa9Dz98SSh4F_A')
