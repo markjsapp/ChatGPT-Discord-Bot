@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 # Set the webhook URL
-webhook_url = os.getenv('WEBHOOK_KEY')
+webhook_url = 'https://hook.us1.make.com/lw7k8jkk1deqer77zcq9s6kvf1r7941c'
 
 # create a new bot instance
 intents = discord.Intents.default()
@@ -32,4 +32,4 @@ async def askChatGPT(ctx, question):
         await ctx.send("Webhook POST request failed...")
 
 # run the bot
-bot.run(os.getenv('DISCORD_KEY'))
+bot.run('MTA4NDYwODQxNDkyMTAwMzA5OA.G9XoGg.RpvJUg-lv9tZ2fImt01AuvObtCM5aBKf20Q55s')
