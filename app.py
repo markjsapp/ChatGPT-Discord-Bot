@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 webhook_url = 'https://hook.us1.make.com/lw7k8jkk1deqer77zcq9s6kvf1r7941c'
 
 # create a new bot instance
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.members = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
