@@ -1,4 +1,5 @@
 import discord
+from discord import Intents
 from discord.ext import commands
 import requests
 import json
@@ -9,7 +10,9 @@ from dotenv import load_dotenv
 webhook_url = os.getenv('WEBHOOK_KEY')
 
 # create a new bot instance
-bot = commands.Bot(command_prefix='!')
+intents = discord.Intents.default()
+intents.members = True
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 # define a command that sends a message when triggered
 @bot.command(name='ask')
