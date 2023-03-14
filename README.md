@@ -1,5 +1,6 @@
 # ChatGPT Discord Bot
 This is a Discord bot that uses OpenAI's GPT-3.5-Turbo model to answer users' questions.
+![Example GIF](example.gif)
 
 ## Requirements
 To run this bot, you will need to have the following installed:
