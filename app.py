@@ -4,6 +4,7 @@ import discord
 import openai
 import threading
 import time
+import os
 
 # keep track of how many times we've asked a question
 question_count = 0
@@ -16,7 +17,7 @@ intents = discord.Intents.all()
 intents.members = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-openai.api_key = {YOUR_OPENAI_API_TOKEN}
+openai.api_key = os.environ.get('OPEN_API_KEY')
 
 # sends a message 
 @bot.command(name='ask')
@@ -77,7 +78,7 @@ def main():
      # load environment variables
     load_dotenv()
     # run the bot
-    bot.run({YOUR_DISCORD_BOT_TOKEN})
+    bot.run(os.environ.get('DISCORD_KEY'))
 
 if __name__ == '__main__':
     main()
