@@ -75,10 +75,10 @@ def send_response(response, channel_id):
     bot.loop.create_task(bot.get_channel(channel_id).send(f"ChatGPT said: \n```{response}```"))
 
 def main():
-     # load environment variables
+    # load environment variables
     load_dotenv()
     # run the bot
-    bot.run(os.environ.get('DISCORD_KEY'))
+    bot.run(os.environ.get('DISCORD_API_KEY'))
 
 if __name__ == '__main__':
     main()

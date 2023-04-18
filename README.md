@@ -10,15 +10,19 @@ To run this bot, you will need to have the following installed:
     -python-dotenv
     -openai
 
-You will also need to obtain an OpenAI API key by signing up for their beta program.
+You will also need to obtain an OpenAI API and Discord API key.
 
 ## Installation
 1. Clone this repository to your local machine.
 2. Install the required packages by running the following command in your terminal:
 ```pip install -r requirements.txt```
 3. Create a file named .env in the root directory of the project, and add the following line to it, replacing <YOUR_DISCORD_BOT_TOKEN> with your Discord bot token:
-```DISCORD_TOKEN=<YOUR_DISCORD_BOT_TOKEN>```
-4. Start the bot by running the following command in your terminal:
+```DISCORD_API_KEY=<YOUR_DISCORD_BOT_TOKEN>```
+Do the same for the OPEN_API_KEY:
+```OPEN_API_KEY=<YOUR_OPEN_API_TOKEN>```
+4. Note that this bot utilizes Discord "Intents", so you'll need to toggle all three Privileged Gateway Intents under the BOT tab on the Discord Developer Console.
+5. Additionally, make sure that your bot has joined your server via the OAuth2 generated invite link
+6. Start the bot by running the following command in your terminal:
 ```python app.py```
 
 ## Usage
